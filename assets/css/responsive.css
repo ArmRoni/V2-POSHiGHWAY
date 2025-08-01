@@ -161,7 +161,7 @@
         padding-bottom: 80px;
     }
     .info-block:last-child {
-         padding-bottom: 00px; 
+         padding-bottom: 0px; 
         padding-top: 100px;
     }
     .personalized-scroll-gallery {
@@ -229,6 +229,10 @@
     .personalized-photo {
         max-width: 450px;
     }
+    .info-block:last-child {
+        padding-bottom: 0px; 
+       padding-top: 180px;
+   }
 
 }
 
