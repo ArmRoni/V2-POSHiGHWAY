@@ -1365,6 +1365,16 @@ position: initial;
 */.personalized-scroll-gallery {
   padding-top: 120px;
 }
+.info-block:first-child .personalized-photo-mobile {
+  background: url(./assets/image/imge-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 10px;
+}
+.personalized-photo-mobile img{
+  border-radius: 10px;
+}
 .personalized-photo:first-child img {
   background: url(./assets/image/imge-bg.png);
   background-size: cover;
