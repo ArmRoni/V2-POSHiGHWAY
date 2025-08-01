@@ -382,3 +382,43 @@ if (window.innerWidth > 1100) {
   });
 }
 
+
+
+
+
+var successStories = new Swiper(".successStories", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination-fraction",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  on: {
+    init: function () {
+      updateProgress(this);
+    },
+    slideChange: function () {
+      updateProgress(this);
+    },
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1080: {
+      slidesPerView: 3,
+    },
+
+  },
+});
+

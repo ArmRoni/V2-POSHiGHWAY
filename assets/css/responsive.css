@@ -160,8 +160,14 @@
         padding-top: 80px;
         padding-bottom: 80px;
     }
-
-}
+    .info-block:last-child {
+         padding-bottom: 00px; 
+        padding-top: 100px;
+    }
+    .personalized-scroll-gallery {
+        padding-bottom: 0px;
+    }
+  }
 
 @media only screen and (max-width: 1400px) {
     .banner-video-item {
@@ -691,6 +697,31 @@
     }
 
 }
+
+@media only screen and (min-width: 1100px) {
+    .personalized-scroll-info {
+      position: relative;
+      padding-top: 60px
+    }
+    .info-block {
+      transition: opacity 0.5s ease;
+    }
+    .personalized-scroll-info {
+      position: relative;
+    }
+    .info-block {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+      will-change: opacity;
+    }
+
+    .info-block.active {
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0s;
+    }
+  }
 
 @media only screen and (max-width: 991px) {
     .banner-video {
